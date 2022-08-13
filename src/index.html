@@ -6,7 +6,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <title>Frontend Mentor | E-commerce product page</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='./src/dist/build.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./dist/build.css'>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -53,22 +53,22 @@
                 </div>
 
                 <div class="hidden md:flex mt-8 b mx-auto bg-lack w-fit ">
-                    <div class="border-[1px] border-[#ff7d1a]  rounded-md overflow-hidden mx-3 w-16 h-16 relative">
+                    <div class="border-[2px] border-[#ff7d1a]  rounded-md overflow-hidden mx-3 w-16 h-16 relative">
                         <div data-image_index="0" class=" active relative thumbnails rounded-md overflow-hidden">
                             <img  src="../images/image-product-0-thumbnail.jpg">
                         </div>
                     </div>
-                    <div class="border-[1px] border-[#ff7d1a]  rounded-md overflow-hidden mx-3 w-16 h-16 relative">
+                    <div class="border-[2px] border-[#ff7d1a]  rounded-md overflow-hidden mx-3 w-16 h-16 relative">
                         <div data-image_index="1" class="thumbnails w-16  h-16 rounded-md overflow-hidden">
                             <img  src="../images/image-product-1-thumbnail.jpg">
                         </div>
                     </div>
-                    <div class="border-[1px] border-[#ff7d1a]  rounded-md overflow-hidden mx-3 w-16 h-16 relative">
+                    <div class="border-[2px] border-[#ff7d1a]  rounded-md overflow-hidden mx-3 w-16 h-16 relative">
                         <div data-image_index="2" class="thumbnails w-16  h-16 rounded-md overflow-hidden">
                             <img src="../images/image-product-2-thumbnail.jpg">
                         </div>
                     </div>
-                    <div class="border-[1px] border-[#ff7d1a]  rounded-md overflow-hidden mx-3 w-16 h-16 relative">
+                    <div class="border-[2px] border-[#ff7d1a]  rounded-md overflow-hidden mx-3 w-16 h-16 relative">
                         <div data-image_index="3" class="thumbnails w-16  h-16 rounded-md overflow-hidden">
                             <img src="../images/image-product-3-thumbnail.jpg">
                         </div>
@@ -81,7 +81,7 @@
         </div>
     <!-- End of Product Lightbox section -->
     <!-- Beginning of the Header section -->
-        <header class="relative flex items-center justify-between p-4 lg:container lg:mx-auto lg:border-solid lg:border-b-2">
+        <header class="relative flex items-center justify-between p-4 lg:p-7 lg:container lg:mx-auto lg:border-solid lg:border-b-2">
             <div class="flex items-center flex-wrap">
                 <img data-trigger_target="menu" id="open-menu"  class="mr-4 md:hidden triggers" src="../images/icon-menu.svg" alt="burger-menu-icon">
                 <img src="../images/logo.svg" alt="website-logo">
@@ -91,24 +91,24 @@
                         <li class="font-bold px-2 pb-8 ">
                             <img data-trigger_target="menu" class="close-trigger triggers" src="../images/icon-close.svg" alt="close-icon">
                         </li>
-                        <li class="font-bold p-2 cursor-pointer">Collections</li>
-                        <li class="font-bold p-2 cursor-pointer">Men</li>
-                        <li class="font-bold p-2 cursor-pointer">Women</li>
-                        <li class="font-bold p-2 cursor-pointer">About</li>
-                        <li class="font-bold p-2 cursor-pointer">Contact</li>
+                        <li class="p-2 cursor-pointer text-gray-400">Collections</li>
+                        <li class="p-2 cursor-pointer text-gray-400">Men</li>
+                        <li class="p-2 cursor-pointer text-gray-400">Women</li>
+                        <li class="p-2 cursor-pointer text-gray-400">About</li>
+                        <li class="p-2 cursor-pointer text-gray-400">Contact</li>
                     </ul>
                 </div>
                 <!-- Large screen navlinks -->
                 <ul class=" hidden md:flex ml-4 items-center">
-                    <li class="font-bold p-2 cursor-pointer">Collections</li>
-                    <li class="font-bold p-2 cursor-pointer">Men</li>
-                    <li class="font-bold p-2 cursor-pointer">Women</li>
-                    <li class="font-bold p-2 cursor-pointer">About</li>
-                    <li class="font-bold p-2 cursor-pointer">Contact</li>
+                    <li class="p-2 cursor-pointer text-gray-400">Collections</li>
+                    <li class="p-2 cursor-pointer text-gray-400">Men</li>
+                    <li class="p-2 cursor-pointer text-gray-400">Women</li>
+                    <li class="p-2 cursor-pointer text-gray-400">About</li>
+                    <li class="p-2 cursor-pointer text-gray-400">Contact</li>
                 </ul>
             </div>
             <div class="flex items-center">
-                <svg  data-trigger_target="cart" class="mr-4 triggers hover:text-[#ff7d1a]"  width="22" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" fill="currentColor" fill-rule="nonzero"/></svg>
+                <svg  data-trigger_target="cart" class="mr-4 lg:mr-12 triggers text-gray-400 hover:text-[#ff7d1a]"  width="22" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" fill="currentColor" fill-rule="nonzero"/></svg>
                 <img class=" w-10" src="../images/image-avatar.png" alt="avatar-icon">
             </div>
 
@@ -129,22 +129,22 @@
                   </div>
                   <!-- Large screen thumbnails section which hide on small screen -->
                   <div class="hidden md:flex mt-8">
-                    <a class="border-[1px] border-[#ff7d1a]  rounded-md overflow-hidden mx-3 w-16 h-16 relative">
+                    <a class="border-[2px] border-[#ff7d1a]  rounded-md overflow-hidden mx-3 w-16 h-16 relative">
                         <div data-image_index="0" class="thumbnails active">
                             <img  src="https://talk.openmrs.org/uploads/default/original/2X/d/debba174801e7dac4f8006280b72ae8b0c5bb36d.gif">
                         </div>
                     </a>
-                    <a class="border-[1px] border-[#ff7d1a]  rounded-md overflow-hidden mx-3 w-16 h-16 relative">
+                    <a class="border-[2px] border-[#ff7d1a]  rounded-md overflow-hidden mx-3 w-16 h-16 relative">
                         <div data-image_index="1" class="thumbnails">
                             <img  src="https://talk.openmrs.org/uploads/default/original/2X/d/debba174801e7dac4f8006280b72ae8b0c5bb36d.gif">
                         </div>
                     </a>
-                    <a class="border-[1px] border-[#ff7d1a]  rounded-md overflow-hidden mx-3 w-16 h-16 relative">
+                    <a class="border-[2px] border-[#ff7d1a]  rounded-md overflow-hidden mx-3 w-16 h-16 relative">
                         <div data-image_index="2" class="thumbnails">
                             <img  src="https://talk.openmrs.org/uploads/default/original/2X/d/debba174801e7dac4f8006280b72ae8b0c5bb36d.gif">
                         </div>
                     </a>
-                    <a class="border-[1px] border-[#ff7d1a]  rounded-md overflow-hidden mx-3 w-16 h-16 relative">
+                    <a class="border-[2px] border-[#ff7d1a]  rounded-md overflow-hidden mx-3 w-16 h-16 relative">
                         <div data-image_index="3" class="thumbnails">
                             <img  src="https://talk.openmrs.org/uploads/default/original/2X/d/debba174801e7dac4f8006280b72ae8b0c5bb36d.gif">
                         </div>
@@ -183,6 +183,6 @@
                 </section>
         </section>
     </main>
-    <script src="./src/javascript/main.js"></script>
+    <script src="./javascript/main.js"></script>
 </body>
 </html>
