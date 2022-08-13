@@ -1,4 +1,4 @@
-# e-commerce-product-page
+# E-commerce-product-page
 ## Frontend mentor challenge
 
 Your challenge is to build out this e-commerce product page and get it looking as close to the design as possible.
