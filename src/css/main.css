@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    html {
+        @apply font-kumbh-sans;
+    }
+    body {
+        @apply text-[#1d2025] lg:overflow-hidden;
+
+    }
+    .active::after {
+        content: "";
+     @apply bg-[#ffffff82] absolute w-full h-full top-0
+    }
+    .text-gray-400 {
+        @apply text-[#b6bcc8];
+    }
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
