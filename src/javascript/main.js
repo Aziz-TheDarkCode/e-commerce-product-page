@@ -8,14 +8,14 @@ let productName = document.querySelector('#product-name');
 let cartOnEmptyState= `<p class="text-center text-xs hiddn p-3 cart-on-empty">Your card is empty</p>`;
 let cartMarkup =cartOnEmptyState;
 let cartSingleRow = `<article class="flex items-center justify-between p-3">
-        <img class="w-16 h-16 rounded-xl" src="../images/image-product-1-thumbnail.jpg" alt="selected-product-thumbail" >
+        <img class="w-16 h-16 rounded-xl" src="./images/image-product-1-thumbnail.jpg" alt="selected-product-thumbail" >
         <!-- Selected product information -->
         <div class="text-gray-300 grow p-2">
             <p class="text-sm">${productName.textContent}</p>
             <p class="inline">${productPrice.textContent} * ${productQuantity} =</p>
             <span class="text-black font-bold">${parseInt(productPrice.textContent) * productQuantity}</span>
         </div>
-        <img onclick="{this.parentElement.remove()}" class='delete-product-from-card' src="../images/icon-delete.svg" alt="delete-icon" srcset="">
+        <img onclick="{this.parentElement.remove()}" class='delete-product-from-card' src="./images/icon-delete.svg" alt="delete-icon" srcset="">
     </article>`;
 
 const cart = document.querySelector('.cart-content');
@@ -28,7 +28,7 @@ const cart = document.querySelector('.cart-content');
             // lightbox pagination implementation
                lightboxIsOpen = this.dataset.trigger_target==='productModal' && displayStyle =='block' ?  true : false
                activeImage = lightboxIsOpen === true ? document.querySelector('#lightbox-img') : document.querySelector('#active-product-img');
-               activeImage.src=`../images/image-product-${productDefaultImageIndex}.jpg`
+               activeImage.src=`./images/image-product-${productDefaultImageIndex}.jpg`
             })
         });
 }());
@@ -47,18 +47,18 @@ const cart = document.querySelector('.cart-content');
 (function (){
    const thumbnails = document.querySelectorAll('.thumbnails')
 
-   activeImage.src=`../images/image-product-${productDefaultImageIndex}.jpg`
+   activeImage.src=`./images/image-product-${productDefaultImageIndex}.jpg`
 
    thumbnails.forEach(thumbnail=>{
         //load thumbnails
-        thumbnail.firstElementChild.src=`../images/image-product-${thumbnail.dataset.image_index}.jpg`
+        thumbnail.firstElementChild.src=`./images/image-product-${thumbnail.dataset.image_index}.jpg`
         thumbnail.addEventListener('click',function (){
             // toggle active class for selected thumbnail
             thumbnails.forEach(thumbnail=>{thumbnail.classList.remove('active')})
             this.classList.add('active')
             productDefaultImageIndex = this.dataset.image_index
             // Display selected thumbnail as a large image
-            activeImage.src=`../images/image-product-${productDefaultImageIndex}.jpg`
+            activeImage.src=`./images/image-product-${productDefaultImageIndex}.jpg`
         })
     })
 }());
@@ -74,7 +74,7 @@ const cart = document.querySelector('.cart-content');
             {
                 productDefaultImageIndex++
             }
-                activeImage.src=`../images/image-product-${productDefaultImageIndex}.jpg`
+                activeImage.src=`./images/image-product-${productDefaultImageIndex}.jpg`
             })
     })
 }())
@@ -82,7 +82,7 @@ const cart = document.querySelector('.cart-content');
 addToCartTrigger.addEventListener('click',function(){
         document.querySelector('.cart-content').insertAdjacentHTML('beforeend',`
         <article class="flex items-center justify-between p-3 text-gray-400">
-                <img class="w-16 h-16 rounded-xl" src="../images/image-product-1-thumbnail.jpg" alt="selected-product-thumbail" >
+                <img class="w-16 h-16 rounded-xl" src="./images/image-product-1-thumbnail.jpg" alt="selected-product-thumbail" >
                 <!-- Selected product information -->
                 <div class="grow p-2">
                     <p class="text-sm">${productName.textContent}</p>
